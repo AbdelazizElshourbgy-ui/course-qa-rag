@@ -1,9 +1,3 @@
-"""
-Gradio app: Course Q&A Assistant (RAG).
-
-Run locally:   GEMINI_API_KEY=your_key python app.py
-Hugging Face:  add GEMINI_API_KEY as a Space secret.
-"""
 import os
 
 import gradio as gr
