@@ -1,7 +1,3 @@
-
-
-https://github.com/user-attachments/assets/9168ffc2-c6ed-4de9-94b6-b95c52a048df
-
 # 📚 Standard Course Q&A RAG System
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
@@ -23,6 +19,8 @@ A standard **Retrieval-Augmented Generation (RAG)** system that answers student 
 ## 📸 Demo
 
 **Web app (Gradio)**
+
+https://github.com/user-attachments/assets/9168ffc2-c6ed-4de9-94b6-b95c52a048df
 
 <p align="center">
   <img src="assets/app_answer.png" width="49%" alt="Gradio app: answer with sources">
