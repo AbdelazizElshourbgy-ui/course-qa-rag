@@ -14,7 +14,6 @@ A standard **Retrieval-Augmented Generation (RAG)** system that answers student 
 ## 🌐 Links
 
 - 📓 **Notebook on Kaggle:** [standard-course-q-a-rag-system](https://www.kaggle.com/code/abdelazizelshourbgy/standard-course-q-a-rag-system)
-- 🎥 **Demo video:** <!-- add the link to your screen recording here -->
 
 ## 📸 Demo
 
