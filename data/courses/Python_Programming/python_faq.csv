@@ -1,0 +1,11 @@
+question,answer
+How do I read a file line by line in Python?,Open it with a with statement and loop over the file object: with open('data.txt') as f: for line in f: print(line.strip())
+What is the difference between == and is?,"== compares values for equality, while is checks whether two names refer to the same object in memory."
+How do I remove duplicates from a list?,"Convert it to a set, for example list(set(my_list)). Use list(dict.fromkeys(my_list)) if you need to keep the original order."
+What does the self keyword mean?,self is the first parameter of an instance method and refers to the object on which the method is called.
+What is a lambda function?,"A small anonymous function written in one line, for example lambda x: x * 2."
+How do I install an external package?,"Use pip, for example: pip install pandas."
+What is a virtual environment?,"An isolated Python environment with its own installed packages, created with python -m venv venv, so that different projects do not conflict."
+What is the difference between append and extend?,"append adds its argument as a single element at the end of a list, while extend adds every element of an iterable one by one."
+How do I sort a dictionary by value?,"Use sorted(d.items(), key=lambda item: item[1]) to get a list of key-value pairs sorted by value."
+What is a decorator?,A function that wraps another function to add behavior without changing its code. It is applied with the @ syntax above the function definition.

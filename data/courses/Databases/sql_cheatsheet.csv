@@ -1,0 +1,13 @@
+command,purpose,example
+SELECT,Retrieve rows from one or more tables,"SELECT name, grade FROM students WHERE grade > 80;"
+INSERT,Add a new row to a table,"INSERT INTO students (name, grade) VALUES ('Sara', 92);"
+UPDATE,Modify existing rows,UPDATE students SET grade = 95 WHERE name = 'Sara';
+DELETE,Remove selected rows from a table,DELETE FROM students WHERE grade < 50;
+TRUNCATE,Remove all rows from a table quickly but keep the table structure,TRUNCATE TABLE students;
+DROP TABLE,Permanently delete a table together with its data and structure,DROP TABLE students;
+CREATE TABLE,Create a new table,"CREATE TABLE students (id INT PRIMARY KEY, name VARCHAR(50));"
+ALTER TABLE,"Change the structure of a table, for example add a column",ALTER TABLE students ADD email VARCHAR(100);
+INNER JOIN,Combine rows from two tables that have matching values,"SELECT s.name, c.title FROM students s INNER JOIN courses c ON s.course_id = c.id;"
+GROUP BY,Group rows and apply aggregate functions to each group,"SELECT course_id, AVG(grade) FROM students GROUP BY course_id;"
+ORDER BY,Sort the result of a query,SELECT * FROM students ORDER BY grade DESC;
+CREATE INDEX,Create an index to speed up searches on a column,CREATE INDEX idx_name ON students (name);

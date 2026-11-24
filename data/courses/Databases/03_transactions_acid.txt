@@ -1,0 +1,31 @@
+Transactions and the ACID properties
+
+WHAT IS A TRANSACTION?
+A transaction is a sequence of database operations that is executed as a single logical unit of work.
+The classic example is a bank transfer: subtract money from account A and add it to account B. Either
+both steps must happen or neither of them.
+
+ACID PROPERTIES
+ACID stands for Atomicity, Consistency, Isolation and Durability.
+- Atomicity: a transaction is all or nothing. If any step fails, the whole transaction is rolled back.
+- Consistency: a transaction takes the database from one valid state to another valid state and never
+  violates constraints such as primary keys, foreign keys and checks.
+- Isolation: concurrent transactions do not see each other's unfinished changes, so the result is the
+  same as if they ran one after the other.
+- Durability: once a transaction is committed, its changes are permanent and survive crashes and power
+  failures. DBMSs achieve this with transaction logs.
+
+TRANSACTION CONTROL
+COMMIT saves all changes of the current transaction permanently. ROLLBACK undoes all changes since the
+transaction started. SAVEPOINT marks a point inside a transaction to which you can roll back partially.
+
+ISOLATION LEVELS
+From weakest to strongest: READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ and SERIALIZABLE.
+Weaker levels are faster but allow concurrency problems:
+- Dirty read: reading data that another transaction has not committed yet.
+- Non-repeatable read: reading the same row twice in one transaction and getting different values.
+- Phantom read: running the same query twice and getting extra rows that another transaction inserted.
+
+DEADLOCKS
+A deadlock happens when two transactions each hold a lock that the other one needs, so both wait forever.
+The DBMS detects the cycle and aborts one of the transactions, which can then be retried.

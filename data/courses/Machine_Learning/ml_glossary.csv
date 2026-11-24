@@ -1,0 +1,13 @@
+term,definition,category
+Feature,"An individual measurable input variable used by a model, such as the age or salary of a customer.",Data
+Label,The correct output (target) of a training example in supervised learning.,Data
+Hyperparameter,"A setting chosen before training, such as the learning rate or the number of trees, that is not learned from the data.",Training
+Parameter,"A value learned from the data during training, such as the weights of a linear regression.",Training
+Loss function,A function that measures how far the predictions of the model are from the true values. Training tries to minimize it.,Training
+Epoch,One complete pass through the entire training dataset.,Training
+Decision tree,A model that makes predictions by asking a sequence of yes/no questions about the features.,Models
+Random forest,"An ensemble of many decision trees trained on random subsets of the data, whose predictions are combined by voting or averaging.",Models
+k-means,An unsupervised algorithm that groups the data into k clusters by assigning each point to the nearest cluster center.,Models
+Normalization,"Rescaling feature values to a fixed range, usually 0 to 1.",Preprocessing
+Standardization,Rescaling features so that they have mean 0 and standard deviation 1.,Preprocessing
+Dropout,A regularization technique for neural networks that randomly turns off a fraction of the neurons during training.,Regularization

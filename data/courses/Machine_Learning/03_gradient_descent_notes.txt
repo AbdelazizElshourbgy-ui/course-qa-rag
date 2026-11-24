@@ -1,0 +1,31 @@
+Study notes: Gradient descent and regularization
+
+GRADIENT DESCENT
+Gradient descent is an iterative optimization algorithm that minimizes a loss function. At every step
+it moves the model parameters in the direction opposite to the gradient of the loss. The update rule is:
+    w = w - alpha * dL/dw
+where w is a parameter, L is the loss and alpha is the learning rate.
+
+LEARNING RATE
+The learning rate alpha controls the size of each step. If it is too large, the algorithm overshoots the
+minimum and the loss may oscillate or diverge. If it is too small, training is very slow and may get
+stuck. Learning rate schedules reduce alpha during training.
+
+VARIANTS
+- Batch gradient descent computes the gradient using the whole training set at every step.
+- Stochastic gradient descent (SGD) uses a single example per step. It is fast but noisy.
+- Mini-batch gradient descent uses a small batch (for example 32 or 128 examples). It is the most
+  common choice in practice because it balances speed and stability.
+One epoch is one complete pass over the training data.
+
+FEATURE SCALING
+Standardizing the features (mean 0, standard deviation 1) makes the loss surface rounder, so gradient
+descent converges faster.
+
+REGULARIZATION
+Regularization adds a penalty on the size of the weights to the loss in order to reduce overfitting.
+- L2 regularization (Ridge) adds lambda times the sum of the squared weights. It shrinks the weights
+  toward zero but rarely makes them exactly zero.
+- L1 regularization (Lasso) adds lambda times the sum of the absolute values of the weights. It can
+  set some weights exactly to zero, so it also performs feature selection.
+The hyperparameter lambda controls the strength of the penalty: a larger lambda means a simpler model.

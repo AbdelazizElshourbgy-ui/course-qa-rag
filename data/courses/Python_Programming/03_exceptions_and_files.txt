@@ -1,0 +1,37 @@
+Python Programming - Exceptions and File Handling
+
+EXCEPTIONS
+An exception is an error that happens while the program is running, such as dividing by zero or opening
+a file that does not exist. If it is not handled, the program stops. Use try and except to handle it:
+
+    try:
+        value = int(text)
+        result = 10 / value
+    except ValueError:
+        print("Please enter a number")
+    except ZeroDivisionError:
+        print("Cannot divide by zero")
+    else:
+        print("Result:", result)
+    finally:
+        print("Done")
+
+The try block contains the code that may fail. Each except block handles one type of error (catch specific
+exceptions such as ValueError, ZeroDivisionError or FileNotFoundError instead of a bare except). The else
+block runs only if no exception happened. The finally block always runs, whether or not an exception
+happened, so it is used for cleanup.
+You can raise an exception yourself with the raise keyword, and you can create custom exceptions by
+inheriting from the Exception class.
+
+FILE HANDLING
+Use the open function to work with files: open(path, mode). Common modes are "r" (read, the default),
+"w" (write, which overwrites the file), "a" (append to the end of the file) and "rb" (read binary).
+Always use the with statement because it closes the file automatically, even when an error occurs:
+
+    with open("notes.txt", "r", encoding="utf-8") as f:
+        for line in f:
+            print(line.strip())
+
+Looping directly over the file object reads one line at a time and is memory efficient for big files.
+The method read() returns the whole file as one string, readline() returns the next line and readlines()
+returns a list of all lines. To write, use f.write("text") or f.writelines(list_of_strings).

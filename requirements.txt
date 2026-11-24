@@ -1,0 +1,9 @@
+chromadb
+sentence-transformers
+pypdf
+python-docx
+pandas
+google-genai
+gradio
+# only needed to regenerate the sample data:
+reportlab
