@@ -198,7 +198,10 @@ Python · sentence-transformers · ChromaDB · Google Gemini API (`google-genai`
 
 **Abdelaziz Elshourbgy**
 
-GitHub: [@AbdelazizElshourbgy-ui](https://github.com/AbdelazizElshourbgy-ui) · LinkedIn: [Abdelaziz Elshourbgy](https://www.linkedin.com/in/abdelaziz-elshourbgy-b126a83a2/)
+- GitHub: [@AbdelazizElshourbgy-ui](https://github.com/AbdelazizElshourbgy-ui)
+- Kaggle: [abdelazizelshourbgy](https://www.kaggle.com/abdelazizelshourbgy)
+- LinkedIn: [abdelazizelshourbgy](https://www.linkedin.com/in/abdelaziz-elshourbgy-b126a83a2/)
+
 
 ## 📄 License
 
